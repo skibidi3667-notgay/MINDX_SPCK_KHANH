@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.45)
+    ),
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=80");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-box{
+    width:450px;
+
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+
+    padding:50px 40px;
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    box-shadow:0 8px 32px rgba(0,0,0,.3);
+
+    text-align:center;
+}
+
+h1{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    color:#fff;
+    letter-spacing:4px;
+}
+
+.subtitle{
+    color:#d4af37;
+    margin-bottom:35px;
+    letter-spacing:3px;
+}
+
+h2{
+    color:#fff;
+    margin-bottom:30px;
+    font-weight:500;
+}
+
+.input-box{
+    margin:18px 0;
+}
+
+.input-box input{
+    width:100%;
+    padding:15px 20px;
+
+    border:none;
+    outline:none;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+    font-size:15px;
+}
+
+.input-box input::placeholder{
+    color:#ddd;
+}
+
+button{
+    width:100%;
+    padding:15px;
+
+    border:none;
+    border-radius:50px;
+
+    background:#d4af37;
+    color:#111;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#fff;
+    transform:translateY(-3px);
+}
+
+.switch{
+    color:#eee;
+    margin-top:25px;
+}
+
+.switch a{
+    color:#d4af37;
+    text-decoration:none;
+    font-weight:600;
+}
