@@ -16,14 +16,12 @@ const productData = [
     { id: "damhoa", name: "Đầm Hoa", price: "699.000đ", img: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600", category: "women" }
 ];
 
-// 2. HÀM RENDER (Dùng ES6 Map và Arrow Function chuẩn JSA)
 function displayProducts() {
-    // DOM đến các vùng hiển thị
     const featuredGrid = document.getElementById('featured-grid');
     const menGrid = document.getElementById('men-grid');
     const womenGrid = document.getElementById('women-grid');
 
-    // Hàm phụ để biến 1 object sản phẩm thành đoạn HTML string
+
     const convertToHTML = (product) => {
         return `
             <div class="card">
