@@ -7,120 +7,47 @@
 
     <link rel="stylesheet" href="products.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=600;700&family=Poppins:wght=300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav>
+    <nav>
+        <div class="logo">KHANH</div>
+        <ul>
+            <li><a href="../index/index.html">Trang chủ</a></li>
+            <li><a href="#nam">Nam</a></li>
+            <li><a href="#nu">Nữ</a></li>
+            <li><a href="../login/login.html">Đăng nhập</a></li>
+        </ul>
+    </nav>
 
-    <div class="logo">KHANH</div>
-
-    <ul>
-        <li><a href="../index/index.html">Trang chủ</a></li>
-        <li><a href="#nam">Nam</a></li>
-        <li><a href="#nu">Nữ</a></li>
-        <li><a href="../login/login.html">Đăng nhập</a></li>
-    </ul>
-
-</nav>
-
-<section class="banner">
-
-    <div class="banner-content">
-        <h1>KHANH FASHION</h1>
-        <p>Khám phá bộ sưu tập thời trang mới nhất</p>
-    </div>
-
-</section>
-
-<section class="products">
-
-    <h2>Sản phẩm nổi bật</h2>
-
-    <div class="product-grid">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" alt="Áo Thun Basic">
-            <h3>Áo Thun Basic</h3>
-            <p>399.000đ</p>
-            <a href="../details/aothun-basic.html">Xem chi tiết</a>
+    <section class="banner">
+        <div class="banner-content">
+            <h1>KHANH FASHION</h1>
+            <p>Khám phá bộ sưu tập thời trang mới nhất</p>
         </div>
+    </section>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600" alt="Áo Khoác Luxury">
-            <h3>Áo Khoác Luxury</h3>
-            <p>899.000đ</p>
-            <a href="../details/aokhoac-luxury.html">Xem chi tiết</a>
+    <section class="products">
+
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-grid" id="featured-grid">
+            </div>
+
+        <div class="category-title" id="nam">
+            <h3>Quần Áo Nam</h3>
         </div>
+        <div class="product-grid" id="men-grid">
+            </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600" alt="Đầm Thời Trang">
-            <h3>Đầm Thời Trang</h3>
-            <p>699.000đ</p>
-            <a href="../details/dam-thoitrang.html">Xem chi tiết</a>
+        <div class="category-title" id="nu">
+            <h3>Quần Áo Nữ</h3>
         </div>
+        <div class="product-grid" id="women-grid">
+            </div>
 
-    </div>
+    </section>
 
-    <div class="category-title" id="nam">
-        <h3>Quần Áo Nam</h3>
-    </div>
-
-    <div class="product-grid">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600" alt="Sơ Mi Nam">
-            <h3>Sơ Mi Nam</h3>
-            <p>599.000đ</p>
-            <a href="../details/somi-nam.html">Xem chi tiết</a>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600" alt="Áo Khoác Nam">
-            <h3>Áo Khoác Nam</h3>
-            <p>799.000đ</p>
-            <a href="../details/aokhoac-nam.html">Xem chi tiết</a>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?w=600" alt="Quần Jean Nam">
-            <h3>Quần Jean Nam</h3>
-            <p>499.000đ</p>
-            <a href="../details/quanjean-nam.html">Xem chi tiết</a>
-        </div>
-
-    </div>
-
-    <div class="category-title" id="nu">
-        <h3>Quần Áo Nữ</h3>
-    </div>
-
-    <div class="product-grid">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600" alt="Áo Len Nữ">
-            <h3>Áo Len Nữ</h3>
-            <p>559.000đ</p>
-            <a href="../details/aolen-nu.html">Xem chi tiết</a>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Set Nữ Cao Cấp">
-            <h3>Set Nữ Cao Cấp</h3>
-            <p>999.000đ</p>
-            <a href="../details/setnu.html">Xem chi tiết</a>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600" alt="Đầm Hoa">
-            <h3>Đầm Hoa</h3>
-            <p>699.000đ</p>
-            <a href="../details/damhoa.html">Xem chi tiết</a>
-        </div>
-
-    </div>
-
-</section>
-
+    <script src="products.js"></script>
 </body>
 </html>
