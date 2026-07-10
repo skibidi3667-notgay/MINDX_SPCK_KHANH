@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Đăng Ký | KHANH FASHION</title>
 
     <link rel="stylesheet" href="register.css">
@@ -21,22 +20,22 @@
 
             <h2>Tạo Tài Khoản</h2>
 
-            <form>
+            <form id="registerForm">
 
                 <div class="input-box">
-                    <input type="text" placeholder="Họ và tên" required>
+                    <input type="text" id="fullname" placeholder="Họ và tên" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" id="email" placeholder="Email" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="password" placeholder="Mật khẩu" required>
+                    <input type="password" id="password" placeholder="Mật khẩu" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="password" placeholder="Nhập lại mật khẩu" required>
+                    <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu" required>
                 </div>
 
                 <button type="submit">Đăng Ký</button>
@@ -51,6 +50,8 @@
         </div>
 
     </div>
+
+    <script src="register.js"></script>
 
 </body>
 </html>
