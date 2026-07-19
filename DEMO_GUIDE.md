@@ -7,18 +7,6 @@ KHANH FASHION là website bán hàng thời trang được xây dựng bằng HT
 Mục tiêu của sản phẩm là giúp người dùng có thể duyệt sản phẩm, chọn sản phẩm yêu thích và thực hiện luồng mua hàng đơn giản.
 
 ## 2. Các trang chính trong website
-
-### Trang chủ
-
-File: `index/index.html`
-
-Tính năng:
-- Hiển thị thương hiệu KHANH FASHION.
-- Có banner giới thiệu bộ sưu tập mới.
-- Có nút "Mua ngay" dẫn sang trang sản phẩm.
-- Thanh điều hướng tới trang sản phẩm, giỏ hàng và đăng nhập.
-- Nếu người dùng đã đăng nhập, menu sẽ hiển thị lời chào, nút đăng xuất và nút xóa tài khoản.
-
 ### Trang đăng ký
 
 File: `register/register.html`
@@ -40,6 +28,19 @@ Tính năng:
 - Lấy danh sách tài khoản từ `localStorage`.
 - Nếu thông tin đúng, lưu trạng thái đăng nhập và thông tin người dùng hiện tại.
 - Nếu sai email hoặc mật khẩu, hiển thị thông báo lỗi.
+
+### Trang chủ
+
+File: `index/index.html`
+
+Tính năng:
+- Hiển thị thương hiệu KHANH FASHION.
+- Có banner giới thiệu bộ sưu tập mới.
+- Có nút "Mua ngay" dẫn sang trang sản phẩm.
+- Thanh điều hướng tới trang sản phẩm, giỏ hàng và đăng nhập.
+- Nếu người dùng đã đăng nhập, menu sẽ hiển thị lời chào, nút đăng xuất và nút xóa tài khoản.
+
+
 
 ### Trang danh sách sản phẩm
 
