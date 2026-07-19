@@ -1,40 +1,33 @@
 const registerForm = document.getElementById("registerForm");
 
 registerForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    event.preventDefault();
+  const fullname = document.getElementById("fullname").value.trim();
+  const email = document.getElementById("email").value.trim().toLowerCase();
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
 
-    const fullname = document.getElementById("fullname").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
+  if (password !== confirmPassword) {
+    alert("Mật khẩu nhập lại không khớp!");
+    return;
+  }
 
-    if (password !== confirmPassword) {
-        alert("Mật khẩu nhập lại không khớp!");
-        return;
-    }
+  let users = JSON.parse(localStorage.getItem("users")) || [];
+  const emailExisted = users.some((user) => user.email === email);
 
-    let users = JSON.parse(localStorage.getItem("users")) || [];
+  if (emailExisted) {
+    alert("Email đã tồn tại!");
+    return;
+  }
 
-    const checkEmail = users.find(user => user.email === email);
+  users.push({
+    fullname,
+    email,
+    password
+  });
 
-    if (checkEmail) {
-        alert("Email đã tồn tại!");
-        return;
-    }
-
-    const newUser = {
-        fullname: fullname,
-        email: email,
-        password: password
-    };
-
-    users.push(newUser);
-
-    localStorage.setItem("users", JSON.stringify(users));
-
-    alert("Đăng ký thành công!");
-
-    window.location.href = "../login/login.html";
-
+  localStorage.setItem("users", JSON.stringify(users));
+  alert("Đăng ký thành công!");
+  window.location.href = "../login/login.html";
 });

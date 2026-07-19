@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng | KHANH FASHION</title>
+  <link rel="stylesheet" href="cart.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="../index/index.html">KHANH</a>
+    <ul>
+      <li><a href="../products/products.html">Sản phẩm</a></li>
+      <li><a href="../order/order.html">Theo dõi đơn</a></li>
+      <li><a href="../login/login.html">Đăng nhập</a></li>
+    </ul>
+  </nav>
+
+  <main class="cart-page">
+    <section class="cart-title">
+      <span>Thanh toán</span>
+      <h1>Giỏ hàng của bạn</h1>
+      <p>Kiểm tra sản phẩm, cập nhật số lượng và đặt đơn hàng.</p>
+    </section>
+
+    <section class="cart-layout">
+      <div class="cart-list" id="cart-list"></div>
+
+      <aside class="summary">
+        <h2>Tóm tắt đơn hàng</h2>
+        <div class="summary-row">
+          <span>Tạm tính</span>
+          <strong id="subtotal">0đ</strong>
+        </div>
+        <div class="summary-row">
+          <span>Phí vận chuyển</span>
+          <strong id="shipping">0đ</strong>
+        </div>
+        <div class="summary-row total">
+          <span>Tổng cộng</span>
+          <strong id="total">0đ</strong>
+        </div>
+
+        <form id="checkout-form">
+          <label for="customer-name">Tên người nhận</label>
+          <input id="customer-name" type="text" placeholder="Nguyễn Văn A" required>
+
+          <label for="customer-phone">Số điện thoại</label>
+          <input id="customer-phone" type="tel" placeholder="0901234567" required>
+
+          <label for="customer-address">Địa chỉ giao hàng</label>
+          <textarea id="customer-address" rows="3" placeholder="Số nhà, đường, quận/huyện, tỉnh/thành" required></textarea>
+
+          <button type="submit">Mua ngay</button>
+        </form>
+      </aside>
+    </section>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>

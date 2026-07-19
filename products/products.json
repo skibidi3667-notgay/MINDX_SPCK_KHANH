@@ -1,65 +1,343 @@
 [
-    {
-        "id":"aothun-basic",
-        "name":"Áo Thun Basic",
-        "price":"399.000đ",
-        "img":"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600",
-        "category":"featured"
-    },
-    {
-        "id":"aokhoac-luxury",
-        "name":"Áo Khoác Luxury",
-        "price":"899.000đ",
-        "img":"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600",
-        "category":"featured"
-    },
-    {
-        "id":"dam-thoitrang",
-        "name":"Đầm Thời Trang",
-        "price":"699.000đ",
-        "img":"https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600",
-        "category":"featured"
-    },
-    {
-        "id":"somi-nam",
-        "name":"Sơ Mi Nam",
-        "price":"599.000đ",
-        "img":"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600",
-        "category":"men"
-    },
-    {
-        "id":"aokhoac-nam",
-        "name":"Áo Khoác Nam",
-        "price":"799.000đ",
-        "img":"https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600",
-        "category":"men"
-    },
-    {
-        "id":"quanjean-nam",
-        "name":"Quần Jean Nam",
-        "price":"499.000đ",
-        "img":"https://images.unsplash.com/photo-1603252109303-2751441dd157?w=600",
-        "category":"men"
-    },
-    {
-        "id":"aolen-nu",
-        "name":"Áo Len Nữ",
-        "price":"559.000đ",
-        "img":"https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600",
-        "category":"women"
-    },
-    {
-        "id":"setnu",
-        "name":"Set Nữ Cao Cấp",
-        "price":"999.000đ",
-        "img":"https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600",
-        "category":"women"
-    },
-    {
-        "id":"damhoa",
-        "name":"Đầm Hoa",
-        "price":"699.000đ",
-        "img":"https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600",
-        "category":"women"
-    }
+  {
+    "id": "aothun-basic",
+    "name": "Áo Thun Basic",
+    "price": 399000,
+    "oldPrice": 459000,
+    "img": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+    "category": "featured",
+    "categoryName": "Nổi bật",
+    "gender": "Unisex",
+    "material": "Cotton 100%",
+    "colors": ["Trắng", "Đen", "Xám"],
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 32,
+    "rating": 4.8,
+    "sold": 124,
+    "description": "Áo thun basic dễ phối đồ, chất vải mềm, thoáng và phù hợp đi học, đi chơi hoặc mặc hằng ngày.",
+    "features": [
+      "Form regular dễ mặc",
+      "Không xù lông sau nhiều lần giặt",
+      "Đường may gọn, cổ áo chắc chắn"
+    ],
+    "reviews": [
+      {
+        "name": "Minh Anh",
+        "rating": 5,
+        "comment": "Áo mềm, mặc mát và đúng size."
+      },
+      {
+        "name": "Quốc Bảo",
+        "rating": 4,
+        "comment": "Màu đẹp, giao hàng nhanh."
+      }
+    ]
+  },
+  {
+    "id": "aokhoac-luxury",
+    "name": "Áo Khoác Luxury",
+    "price": 899000,
+    "oldPrice": 1099000,
+    "img": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+    "category": "featured",
+    "categoryName": "Nổi bật",
+    "gender": "Unisex",
+    "material": "Kaki phối lót dù",
+    "colors": ["Đen", "Kem", "Rêu"],
+    "sizes": ["M", "L", "XL"],
+    "stock": 18,
+    "rating": 4.9,
+    "sold": 86,
+    "description": "Áo khoác dáng hiện đại, giữ ấm nhẹ và tạo điểm nhấn cho outfit đi chơi hoặc du lịch.",
+    "features": [
+      "Chống gió nhẹ",
+      "Có túi trong tiện dụng",
+      "Dây kéo bền, dễ kéo"
+    ],
+    "reviews": [
+      {
+        "name": "Hoàng Nam",
+        "rating": 5,
+        "comment": "Khoác lên rất đứng form."
+      },
+      { "name": "Thu Hà", "rating": 5, "comment": "Chất vải đẹp hơn mong đợi." }
+    ]
+  },
+  {
+    "id": "dam-thoitrang",
+    "name": "Đầm Thời Trang",
+    "price": 699000,
+    "oldPrice": 820000,
+    "img": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80",
+    "category": "featured",
+    "categoryName": "Nổi bật",
+    "gender": "Nữ",
+    "material": "Lụa tuyết",
+    "colors": ["Hồng", "Kem", "Đen"],
+    "sizes": ["S", "M", "L"],
+    "stock": 21,
+    "rating": 4.7,
+    "sold": 94,
+    "description": "Đầm dáng thanh lịch, phù hợp đi tiệc nhẹ, đi làm hoặc chụp ảnh cuối tuần.",
+    "features": ["Tôn dáng", "Vải rũ nhẹ", "Dễ phối phụ kiện"],
+    "reviews": [
+      {
+        "name": "Bảo Ngọc",
+        "rating": 5,
+        "comment": "Mặc lên rất xinh, vải không bị nhăn nhiều."
+      },
+      { "name": "Linh Chi", "rating": 4, "comment": "Form vừa, màu ngoài đẹp." }
+    ]
+  },
+  {
+    "id": "somi-nam",
+    "name": "Sơ Mi Nam",
+    "price": 599000,
+    "oldPrice": 680000,
+    "img": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80",
+    "category": "men",
+    "categoryName": "Thời trang nam",
+    "gender": "Nam",
+    "material": "Cotton poplin",
+    "colors": ["Trắng", "Xanh nhạt", "Đen"],
+    "sizes": ["M", "L", "XL"],
+    "stock": 28,
+    "rating": 4.6,
+    "sold": 73,
+    "description": "Sơ mi nam lịch sự, dễ mặc đi học, đi làm hoặc dùng trong các buổi gặp mặt.",
+    "features": ["Ít nhăn", "Cổ áo đứng", "Nút chắc chắn"],
+    "reviews": [
+      {
+        "name": "Anh Khoa",
+        "rating": 5,
+        "comment": "Sơ mi đẹp, mặc đi làm rất ổn."
+      },
+      {
+        "name": "Gia Huy",
+        "rating": 4,
+        "comment": "Size hơi rộng nhẹ nhưng chất tốt."
+      }
+    ]
+  },
+  {
+    "id": "aokhoac-nam",
+    "name": "Áo Khoác Nam",
+    "price": 799000,
+    "oldPrice": 930000,
+    "img": "https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=900&q=80",
+    "category": "men",
+    "categoryName": "Thời trang nam",
+    "gender": "Nam",
+    "material": "Denim dày vừa",
+    "colors": ["Xanh denim", "Đen"],
+    "sizes": ["M", "L", "XL"],
+    "stock": 15,
+    "rating": 4.7,
+    "sold": 61,
+    "description": "Áo khoác nam cá tính, dễ phối với áo thun, quần jean hoặc sneaker.",
+    "features": [
+      "Form rộng vừa",
+      "Chất denim bền",
+      "Phối được nhiều phong cách"
+    ],
+    "reviews": [
+      {
+        "name": "Tuấn Kiệt",
+        "rating": 5,
+        "comment": "Áo dày vừa, lên hình đẹp."
+      },
+      {
+        "name": "Đức Minh",
+        "rating": 4,
+        "comment": "Màu denim ổn, đóng gói cẩn thận."
+      }
+    ]
+  },
+  {
+    "id": "quanjean-nam",
+    "name": "Quần Jean Nam",
+    "price": 499000,
+    "oldPrice": 590000,
+    "img": "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=80",
+    "category": "men",
+    "categoryName": "Thời trang nam",
+    "gender": "Nam",
+    "material": "Jean co giãn nhẹ",
+    "colors": ["Xanh", "Đen"],
+    "sizes": ["29", "30", "31", "32", "34"],
+    "stock": 40,
+    "rating": 4.5,
+    "sold": 112,
+    "description": "Quần jean dáng slim vừa phải, dễ mặc trong nhiều hoàn cảnh và không gò bó khi di chuyển.",
+    "features": ["Co giãn nhẹ", "Ống quần gọn", "Giữ màu tốt"],
+    "reviews": [
+      {
+        "name": "Thanh Phong",
+        "rating": 4,
+        "comment": "Quần vừa vặn, giá hợp lý."
+      },
+      {
+        "name": "Nhật Long",
+        "rating": 5,
+        "comment": "Mặc thoải mái, đúng mô tả."
+      }
+    ]
+  },
+  {
+    "id": "aolen-nu",
+    "name": "Áo Len Nữ",
+    "price": 559000,
+    "oldPrice": 650000,
+    "img": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80",
+    "category": "women",
+    "categoryName": "Thời trang nữ",
+    "gender": "Nữ",
+    "material": "Len mềm",
+    "colors": ["Kem", "Nâu", "Xám"],
+    "sizes": ["S", "M", "L"],
+    "stock": 24,
+    "rating": 4.8,
+    "sold": 67,
+    "description": "Áo len nữ mềm mại, giữ ấm nhẹ và phù hợp phối cùng chân váy hoặc quần jean.",
+    "features": ["Len không quá dày", "Mềm, ít gây ngứa", "Màu dễ phối"],
+    "reviews": [
+      {
+        "name": "Hà My",
+        "rating": 5,
+        "comment": "Áo mềm và màu kem rất xinh."
+      },
+      { "name": "Phương Vy", "rating": 4, "comment": "Mặc vừa, giao nhanh." }
+    ]
+  },
+  {
+    "id": "setnu",
+    "name": "Set Nữ Cao Cấp",
+    "price": 999000,
+    "oldPrice": 1190000,
+    "img": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80",
+    "category": "women",
+    "categoryName": "Thời trang nữ",
+    "gender": "Nữ",
+    "material": "Tweed mềm",
+    "colors": ["Trắng", "Đen", "Hồng nhạt"],
+    "sizes": ["S", "M", "L"],
+    "stock": 12,
+    "rating": 4.9,
+    "sold": 55,
+    "description": "Set nữ cao cấp có thiết kế thanh lịch, phù hợp đi làm, dự tiệc hoặc các dịp cần chỉn chu.",
+    "features": [
+      "Áo và váy đồng bộ",
+      "Đường may tinh tế",
+      "Có lớp lót thoải mái"
+    ],
+    "reviews": [
+      {
+        "name": "Ngọc Trâm",
+        "rating": 5,
+        "comment": "Set mặc rất sang, đúng ảnh."
+      },
+      { "name": "Mai Linh", "rating": 5, "comment": "Đáng tiền, chất vải đẹp." }
+    ]
+  },
+  {
+    "id": "damhoa",
+    "name": "Đầm Hoa",
+    "price": 699000,
+    "oldPrice": 790000,
+    "img": "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=900&q=80",
+    "category": "women",
+    "categoryName": "Thời trang nữ",
+    "gender": "Nữ",
+    "material": "Voan lót mềm",
+    "colors": ["Hoa xanh", "Hoa hồng"],
+    "sizes": ["S", "M", "L"],
+    "stock": 19,
+    "rating": 4.6,
+    "sold": 82,
+    "description": "Đầm hoa nhẹ nhàng, phù hợp dạo phố, picnic hoặc những ngày muốn outfit nữ tính hơn.",
+    "features": ["Có lớp lót", "Tay áo nhẹ", "Họa tiết tươi sáng"],
+    "reviews": [
+      {
+        "name": "Khánh Linh",
+        "rating": 5,
+        "comment": "Đầm lên dáng đẹp, họa tiết dễ thương."
+      },
+      { "name": "Yến Nhi", "rating": 4, "comment": "Vải nhẹ, mặc mùa hè hợp." }
+    ]
+  },
+
+  {
+    "id": "hoodie-unisex",
+    "name": "Hoodie Unisex",
+    "price": 649000,
+    "oldPrice": 760000,
+    "img": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=80",
+    "category": "streetwear",
+    "categoryName": "Streetwear",
+    "gender": "Unisex",
+    "material": "Nỉ cotton",
+    "colors": ["Đen", "Xám", "Xanh navy"],
+    "sizes": ["M", "L", "XL"],
+    "stock": 34,
+    "rating": 4.7,
+    "sold": 101,
+    "description": "Hoodie unisex trẻ trung, giữ ấm tốt và phù hợp phong cách đường phố.",
+    "features": ["Mũ áo rộng vừa", "Túi trước tiện dụng", "Bo tay chắc"],
+    "reviews": [
+      {
+        "name": "Gia Bảo",
+        "rating": 5,
+        "comment": "Hoodie dày, mặc rất thích."
+      },
+      { "name": "An Nhiên", "rating": 4, "comment": "Màu xám đẹp, form rộng." }
+    ]
+  },
+  {
+    "id": "sneaker-trang",
+    "name": "Sneaker Trắng",
+    "price": 749000,
+    "oldPrice": 890000,
+    "img": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=80",
+    "category": "accessories",
+    "categoryName": "Phụ kiện",
+    "gender": "Unisex",
+    "material": "Da PU",
+    "colors": ["Trắng", "Trắng phối đen"],
+    "sizes": ["38", "39", "40", "41", "42", "43"],
+    "stock": 22,
+    "rating": 4.6,
+    "sold": 76,
+    "description": "Sneaker trắng tối giản, dễ phối với nhiều outfit từ năng động đến lịch sự.",
+    "features": ["Đế êm", "Dễ vệ sinh", "Kiểu dáng basic"],
+    "reviews": [
+      {
+        "name": "Hải Đăng",
+        "rating": 5,
+        "comment": "Giày êm, đi học rất hợp."
+      },
+      { "name": "Mỹ Duyên", "rating": 4, "comment": "Đẹp, đúng size." }
+    ]
+  },
+  {
+    "id": "tui-deo-cheo",
+    "name": "Túi Đeo Chéo",
+    "price": 429000,
+    "oldPrice": 510000,
+    "img": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
+    "category": "accessories",
+    "categoryName": "Phụ kiện",
+    "gender": "Nữ",
+    "material": "Da tổng hợp",
+    "colors": ["Đen", "Kem", "Nâu"],
+    "sizes": ["Free size"],
+    "stock": 30,
+    "rating": 4.5,
+    "sold": 58,
+    "description": "Túi đeo chéo nhỏ gọn, đủ chỗ cho ví, điện thoại và các vật dụng cần thiết.",
+    "features": ["Dây đeo chỉnh được", "Khóa nam châm", "Thiết kế thanh lịch"],
+    "reviews": [
+      { "name": "Lan Anh", "rating": 5, "comment": "Túi nhỏ xinh, da mềm." },
+      { "name": "Kim Ngân", "rating": 4, "comment": "Màu kem rất dễ phối." }
+    ]
+  }
 ]
